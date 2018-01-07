@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "EmoUpload";
+}
+
+<h2>Subir Foto</h2>
+
+@using (Html.BeginForm("Index", "EmoUpload", FormMethod.Post,
+                new { enctype = "multipart/form-data" })) //Ese ENCODYNG type es para archivos
+{
+    <input type="file" name="file" value="" />    <br />
+
+    <input type="submit" name="enviar" value="Enviar" />
+
+
+}
+
